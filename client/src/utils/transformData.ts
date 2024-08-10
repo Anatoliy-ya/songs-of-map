@@ -1,4 +1,4 @@
-import { Song } from '../types/Song';
+import { Song } from '../types/songInterface';
 
 export function transformData(rawData: any): Song {
   return {

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import './SimilarityMap.css';
 import { fabric } from 'fabric';
-import { Song } from '../../types/Song';
+import { Song } from '../../types/songInterface';
 import similarityWorker from '../../workers/similarityWorker.ts?worker';
 import { Modal } from '../../UI/Modal';
 import rusMap from '../../assets/rus.svg';

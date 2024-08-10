@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { Song } from '../types/Song';
+import { Song } from '../types/songInterface';
 import { getAllSongs } from '../api/api';
 
 export interface SongsState {

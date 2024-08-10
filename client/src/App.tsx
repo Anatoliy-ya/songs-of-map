@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { Song } from './types/Song';
+import { Song } from './types/songInterface';
 import { findSimilarSongs } from './utils/similarityCalculator';
 import { SongListPage } from './pages/SongListPage';
 import { SongMapPage } from './pages/SongMapPage';

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './PageStyle.css';
-import { Song } from '../types/Song';
+import { Song } from '../types/songInterface';
 import { SongList } from '../components/SongList/SongList';
 
 interface SongListPageProps {
@@ -15,11 +15,9 @@ export const SongListPage: React.FC<SongListPageProps> = ({
   similarityList,
 }) => {
   const [showRecommendedList, setShowRecommendedList] = useState<Boolean>(false);
-  console.log('@similarityList', similarityList, similarityList.length > 0);
 
   useEffect(() => {
     setShowRecommendedList(similarityList.length > 0);
-    console.log('@similarityList', similarityList, similarityList.length > 0);
   }, [similarityList]);
 
   return (

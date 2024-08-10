@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './SimilarityMap.css';
-import { Song } from '../../types/Song';
+import { Song } from '../../types/songInterface';
 import { Modal } from '../../UI/Modal';
 import similarityWorker from '../../workers/similarityWorker.ts?worker';
 import rusMap from '../../assets/rus.svg';
